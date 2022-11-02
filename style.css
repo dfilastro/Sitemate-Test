@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: Nunito, sans-serif;
+}
+span {
+  color: #bf2e34;
+  font-weight: bold;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #bf2e34;
+  border: 1px solid #bf2e34;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.btns--container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.click--container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
+.user--choice {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.popup--choice {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  z-index: 100;
+
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.popup--container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 50rem;
+  height: 15rem;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
